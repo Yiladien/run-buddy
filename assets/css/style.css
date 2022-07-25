@@ -89,21 +89,44 @@
   
   
   /* FOOTER STYLES START */
+  /* Prior to flex */
+  /* footer {
+    background: #fce138;
+    padding: 40px 35px;
+    width: 100%;
+  } */
+
   footer {
     background: #fce138;
     padding: 40px 35px;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
   
-  footer h2 {
+  /* Prior to flex */
+  /* footer h2 {
     display: inline;
     color: #024e76;
     font-size: 30px;
     margin: 0;
-  }
+  } */
   
-  footer div {
+  footer h2 {
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  /* Prior to flex */
+  /* footer div {
     float: right;
+    line-height: 1.5;
+    text-align: right;
+  } */
+
+  footer div {
     line-height: 1.5;
     text-align: right;
   }
