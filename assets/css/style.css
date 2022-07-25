@@ -12,6 +12,12 @@
   
   /* HEADER / NAV BAR STYLES START */
   
+  /* Prior to flexbox */
+  /* header {
+    padding: 20px 35px;
+    background-color: #39a6b2;
+  } */
+  
   header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -20,9 +26,17 @@
     flex-wrap: wrap;
   }
   
+  /* Prior to flexbox */
+  /* header h1 {
+    font-weight: bold;
+    display: inline;
+    margin: 0;
+    font-size: 36px;
+    color: #fce138;
+  } */
+
   header h1 {
     font-weight: bold;
-    /* display: inline; */
     margin: 0;
     font-size: 36px;
     color: #fce138;
@@ -33,20 +47,42 @@
     color: #fce138;
   }
   
+  /* Prior to flexbox */
+  /* header nav {
+    float: right;
+    margin: 7px 0;
+  } */
+
   header nav {
-    /* float: right; */
     margin: 7px 0;
   }
-  
-  header nav ul li {
+
+/* Prior to Flexbox */
+  /* header nav ul li {
     display: inline;
-  }
+  } */
   
-  header nav ul li a {
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  /* Prior to flexbox */
+  /* header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+  } */
+
+  header nav ul li a {
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 1.5vw;
   }
+
   
   /* HEADER / NAVBAR STYLES END */
   
